@@ -55,7 +55,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ButtonManager.cs" />
+     <Compile Include="Assets\Scripts\MoveScene.cs" />
+     <Compile Include="Assets\Scripts\MusicManager.cs" />
      <Compile Include="Assets\Scripts\SequenceAnimator.cs" />
+     <Compile Include="Assets\Scripts\Setting.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Pixel-Space-Game/SpaceGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
