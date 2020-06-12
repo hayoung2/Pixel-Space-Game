@@ -60,6 +60,8 @@
      <Compile Include="Assets\Scripts\MusicManager.cs" />
      <Compile Include="Assets\Scripts\SequenceAnimator.cs" />
      <Compile Include="Assets\Scripts\Setting.cs" />
+     <Compile Include="Assets\Scripts\Sound.cs" />
+     <Compile Include="Assets\Scripts\Volume.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Pixel-Space-Game/SpaceGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
