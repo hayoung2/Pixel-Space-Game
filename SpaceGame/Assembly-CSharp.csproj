@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\ButtonManager.cs" />
      <Compile Include="Assets\Scripts\MoveScene.cs" />
      <Compile Include="Assets\Scripts\MusicManager.cs" />
+     <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\SequenceAnimator.cs" />
      <Compile Include="Assets\Scripts\Setting.cs" />
      <Compile Include="Assets\Scripts\Sound.cs" />
