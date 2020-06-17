@@ -6,8 +6,14 @@ public class Player : MonoBehaviour
 {
     [SerializeField]
     private float moveSpeed=1f;
+    [SerializeField]
+    private float jumpValue=2f;
+
     private Rigidbody2D rigidbody;
     private Animator animator;
+
+    public GameObject dieEffect;
+    public GameObject itemEffect;
 
     void Start()
     {
@@ -37,9 +43,29 @@ public class Player : MonoBehaviour
     
     private void Jump()
     {
-
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            rigidbody.velocity = new Vector2(rigidbody.velocity.x, jumpValue);
+            animator.SetBool("Jump", true);
+        }
+        else
+        {
+            animator.SetBool("Jump", false);
+        }
     }
 
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.tag == "crystal")
+        {
+            Destroy(collider.gameObject);
+        }else if (collider.gameObject.tag == "spike")
+        {
+            Destroy(this.gameObject);
+        }else if (collider.gameObject.tag == "portal")
+        {
 
+        }
+    }
  
 }
